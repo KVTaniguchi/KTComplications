@@ -1,0 +1,16 @@
+PODS:
+  - KTComplications (0.1.0)
+
+DEPENDENCIES:
+  - KTComplications (from `../`)
+
+EXTERNAL SOURCES:
+  KTComplications:
+    :path: ../
+
+SPEC CHECKSUMS:
+  KTComplications: 84bc1b41001cf34d12d51999544353a518f0a299
+
+PODFILE CHECKSUM: 1c4a266918549c0eee613e90532c88abe6d50656
+
+COCOAPODS: 1.0.1

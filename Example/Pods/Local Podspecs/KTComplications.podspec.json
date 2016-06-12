@@ -1,0 +1,22 @@
+{
+  "name": "KTComplications",
+  "version": "0.1.0",
+  "summary": "A short description of KTComplications.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/KTComplications",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Kevin Taniguchi": "ktaniguchi@urbn.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/KTComplications.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "KTComplications/Classes/**/*"
+}
