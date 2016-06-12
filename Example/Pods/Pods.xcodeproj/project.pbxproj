@@ -16,6 +16,8 @@
 		95021B24E6A9C42051FC3D813F22F305 /* Pods-KTComplications_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 894B99257E045D70D2CCB98A1B098E5A /* Pods-KTComplications_Tests-dummy.m */; };
 		9F06E3AFB37EF8E9EFFF7DA50155D684 /* KTComplications-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA99724FA1242A5A6FA1CBF3BBB63C7C /* KTComplications-dummy.m */; };
 		AB182433DBCF15964CD7D611FFBF83B1 /* Pods-KTComplications_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89FA9E17ECCF859E33277AB81C5D18D3 /* Pods-KTComplications_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6DCBF861D0E29BC00D79F4E /* KTComplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DCBF851D0E29BC00D79F4E /* KTComplicationManager.swift */; };
+		F6DCBF8F1D0E29EE00D79F4E /* KTComplication.h in Headers */ = {isa = PBXBuildFile; fileRef = F6DCBF8E1D0E29EE00D79F4E /* KTComplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,10 @@
 		DEC1651664F8598BA152527FEE956861 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F03650DB7D2611CE1E3DB94685BCE4ED /* KTComplications-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KTComplications-umbrella.h"; sourceTree = "<group>"; };
 		F5386CAC3FFCA6B0475AFA004C614D3D /* Pods-KTComplications_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KTComplications_Tests-resources.sh"; sourceTree = "<group>"; };
+		F6DCBF851D0E29BC00D79F4E /* KTComplicationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KTComplicationManager.swift; sourceTree = "<group>"; };
+		F6DCBF8C1D0E29EE00D79F4E /* KTComplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KTComplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6DCBF8E1D0E29EE00D79F4E /* KTComplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTComplication.h; sourceTree = "<group>"; };
+		F6DCBF901D0E29EE00D79F4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA019155B4A37FF403025C737672803F /* Pods-KTComplications_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KTComplications_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		FAC8E759FA8C9A07F8091286D2F4F159 /* Pods_KTComplications_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KTComplications_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF244D1809E1390AA919E1224D3AE32F /* KTComplications-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KTComplications-prefix.pch"; sourceTree = "<group>"; };
@@ -87,6 +93,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F6DCBF881D0E29EE00D79F4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -111,6 +124,7 @@
 		1CA4976752D1CD6F761D93F3B4898D1C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F6DCBF851D0E29BC00D79F4E /* KTComplicationManager.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -142,6 +156,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BE99340DC6ABC1040BA61408BDBCB18B /* Development Pods */,
+				F6DCBF8D1D0E29EE00D79F4E /* KTComplication */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				F365CE45F3B8899FBC8EBCA4348B4FCE /* Products */,
 				B165432FF85BFE3B38D53AAD2077C0DA /* Targets Support Files */,
@@ -215,8 +230,18 @@
 				0F4B0FD0BD75283E885CCD9559857D77 /* KTComplications.framework */,
 				FAC8E759FA8C9A07F8091286D2F4F159 /* Pods_KTComplications_Example.framework */,
 				2EB276CFF116FC6A20D4E78021F666E0 /* Pods_KTComplications_Tests.framework */,
+				F6DCBF8C1D0E29EE00D79F4E /* KTComplication.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F6DCBF8D1D0E29EE00D79F4E /* KTComplication */ = {
+			isa = PBXGroup;
+			children = (
+				F6DCBF8E1D0E29EE00D79F4E /* KTComplication.h */,
+				F6DCBF901D0E29EE00D79F4E /* Info.plist */,
+			);
+			path = KTComplication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +268,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB182433DBCF15964CD7D611FFBF83B1 /* Pods-KTComplications_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6DCBF891D0E29EE00D79F4E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6DCBF8F1D0E29EE00D79F4E /* KTComplication.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +334,24 @@
 			productReference = 0F4B0FD0BD75283E885CCD9559857D77 /* KTComplications.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		F6DCBF8B1D0E29EE00D79F4E /* KTComplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6DCBF911D0E29EE00D79F4E /* Build configuration list for PBXNativeTarget "KTComplication" */;
+			buildPhases = (
+				F6DCBF871D0E29EE00D79F4E /* Sources */,
+				F6DCBF881D0E29EE00D79F4E /* Frameworks */,
+				F6DCBF891D0E29EE00D79F4E /* Headers */,
+				F6DCBF8A1D0E29EE00D79F4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KTComplication;
+			productName = KTComplication;
+			productReference = F6DCBF8C1D0E29EE00D79F4E /* KTComplication.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -309,6 +360,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					F6DCBF8B1D0E29EE00D79F4E = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -325,15 +381,27 @@
 				F17BD6E663239B75340F8EA2938ACB59 /* KTComplications */,
 				EDC5469F76F31E8ACE6D2EA7BD845BB8 /* Pods-KTComplications_Example */,
 				A188A7902D0F7535C9F74B3992BB4CB4 /* Pods-KTComplications_Tests */,
+				F6DCBF8B1D0E29EE00D79F4E /* KTComplication */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6DCBF8A1D0E29EE00D79F4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		50D1279C9A98E164835539D59EB0C438 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6DCBF861D0E29BC00D79F4E /* KTComplicationManager.swift in Sources */,
 				9F06E3AFB37EF8E9EFFF7DA50155D684 /* KTComplications-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +419,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				95021B24E6A9C42051FC3D813F22F305 /* Pods-KTComplications_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6DCBF871D0E29EE00D79F4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +517,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B6A8D00ABD7517E7FBF7632886617477 /* KTComplications.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -547,6 +623,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B6A8D00ABD7517E7FBF7632886617477 /* KTComplications.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -569,6 +646,74 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F6DCBF921D0E29EE00D79F4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = KTComplication/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taniguchi.KTComplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		F6DCBF931D0E29EE00D79F4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = KTComplication/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taniguchi.KTComplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Release;
 		};
@@ -676,6 +821,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		F6DCBF911D0E29EE00D79F4E /* Build configuration list for PBXNativeTarget "KTComplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6DCBF921D0E29EE00D79F4E /* Debug */,
+				F6DCBF931D0E29EE00D79F4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
