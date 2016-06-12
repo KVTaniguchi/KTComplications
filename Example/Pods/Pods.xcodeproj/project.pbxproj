@@ -16,7 +16,6 @@
 		95021B24E6A9C42051FC3D813F22F305 /* Pods-KTComplications_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 894B99257E045D70D2CCB98A1B098E5A /* Pods-KTComplications_Tests-dummy.m */; };
 		9F06E3AFB37EF8E9EFFF7DA50155D684 /* KTComplications-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA99724FA1242A5A6FA1CBF3BBB63C7C /* KTComplications-dummy.m */; };
 		AB182433DBCF15964CD7D611FFBF83B1 /* Pods-KTComplications_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89FA9E17ECCF859E33277AB81C5D18D3 /* Pods-KTComplications_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FB0BA603BACC34E353B8D5E40DBDAD9E /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2510F9B4E5DF7A9DFECCC56C0A68512B /* ReplaceMe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +32,6 @@
 		0F4B0FD0BD75283E885CCD9559857D77 /* KTComplications.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KTComplications.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B56FB2E454253776FBF371AED840A4B /* Pods-KTComplications_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KTComplications_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		1E766372D145498E0F2E296DDAE9A71E /* Pods-KTComplications_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KTComplications_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		2510F9B4E5DF7A9DFECCC56C0A68512B /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		2CF48E6F3DC0D6687FC25C93A63D0B75 /* Pods-KTComplications_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KTComplications_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2E44EE85B9B857D221C746F41FAEE2F2 /* Pods-KTComplications_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KTComplications_Tests.modulemap"; sourceTree = "<group>"; };
 		2EB276CFF116FC6A20D4E78021F666E0 /* Pods_KTComplications_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KTComplications_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,7 +111,6 @@
 		1CA4976752D1CD6F761D93F3B4898D1C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2510F9B4E5DF7A9DFECCC56C0A68512B /* ReplaceMe.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -338,7 +335,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F06E3AFB37EF8E9EFFF7DA50155D684 /* KTComplications-dummy.m in Sources */,
-				FB0BA603BACC34E353B8D5E40DBDAD9E /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

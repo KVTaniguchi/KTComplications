@@ -15,6 +15,14 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		800AF443B0D24340A1870F27 /* Pods_KTComplications_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 361007B4F34EF3DEE7541083 /* Pods_KTComplications_Tests.framework */; };
 		BBE56B51FE560976FB458EF7 /* Pods_KTComplications_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE1847893E4D8D213D61400 /* Pods_KTComplications_Example.framework */; };
+		F6DCBF641D0E287000D79F4E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6DCBF621D0E287000D79F4E /* Interface.storyboard */; };
+		F6DCBF661D0E287000D79F4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6DCBF651D0E287000D79F4E /* Assets.xcassets */; };
+		F6DCBF6D1D0E287000D79F4E /* KTComplicationsWatchDemp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F6DCBF6C1D0E287000D79F4E /* KTComplicationsWatchDemp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F6DCBF721D0E287000D79F4E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DCBF711D0E287000D79F4E /* InterfaceController.swift */; };
+		F6DCBF741D0E287000D79F4E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DCBF731D0E287000D79F4E /* ExtensionDelegate.swift */; };
+		F6DCBF761D0E287000D79F4E /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DCBF751D0E287000D79F4E /* ComplicationController.swift */; };
+		F6DCBF781D0E287000D79F4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6DCBF771D0E287000D79F4E /* Assets.xcassets */; };
+		F6DCBF7C1D0E287000D79F4E /* KTComplicationsWatchDemp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F6DCBF601D0E287000D79F4E /* KTComplicationsWatchDemp.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +33,46 @@
 			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
 			remoteInfo = KTComplications;
 		};
+		F6DCBF6E1D0E287000D79F4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6DCBF6B1D0E287000D79F4E;
+			remoteInfo = "KTComplicationsWatchDemp Extension";
+		};
+		F6DCBF7A1D0E287000D79F4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6DCBF5F1D0E287000D79F4E;
+			remoteInfo = KTComplicationsWatchDemp;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F6DCBF801D0E287000D79F4E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F6DCBF6D1D0E287000D79F4E /* KTComplicationsWatchDemp Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6DCBF841D0E287000D79F4E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F6DCBF7C1D0E287000D79F4E /* KTComplicationsWatchDemp.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1B7F0A464515000024BCFE16 /* Pods-KTComplications_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KTComplications_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KTComplications_Tests/Pods-KTComplications_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -45,6 +92,16 @@
 		D2D348FE137164BF1E8EE02E /* Pods-KTComplications_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KTComplications_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-KTComplications_Example/Pods-KTComplications_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DC7288D8FD9EA8558F61C39B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DCE1847893E4D8D213D61400 /* Pods_KTComplications_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KTComplications_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6DCBF601D0E287000D79F4E /* KTComplicationsWatchDemp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KTComplicationsWatchDemp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6DCBF631D0E287000D79F4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F6DCBF651D0E287000D79F4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6DCBF671D0E287000D79F4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6DCBF6C1D0E287000D79F4E /* KTComplicationsWatchDemp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "KTComplicationsWatchDemp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6DCBF711D0E287000D79F4E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F6DCBF731D0E287000D79F4E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		F6DCBF751D0E287000D79F4E /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		F6DCBF771D0E287000D79F4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6DCBF791D0E287000D79F4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD3D26AD9785DB838C890056 /* Pods-KTComplications_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KTComplications_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KTComplications_Example/Pods-KTComplications_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FE04DC57218DA698805CDDE7 /* Pods-KTComplications_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KTComplications_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KTComplications_Tests/Pods-KTComplications_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +123,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F6DCBF691D0E287000D79F4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -75,6 +139,8 @@
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for KTComplications */,
 				607FACE81AFB9204008FA782 /* Tests */,
+				F6DCBF611D0E287000D79F4E /* KTComplicationsWatchDemp */,
+				F6DCBF701D0E287000D79F4E /* KTComplicationsWatchDemp Extension */,
 				607FACD11AFB9204008FA782 /* Products */,
 				D5BB2FE5482E49F8F9B1BD13 /* Pods */,
 				DA414B4FFCC6C8CE87DF61A1 /* Frameworks */,
@@ -86,6 +152,8 @@
 			children = (
 				607FACD01AFB9204008FA782 /* KTComplications_Example.app */,
 				607FACE51AFB9204008FA782 /* KTComplications_Tests.xctest */,
+				F6DCBF601D0E287000D79F4E /* KTComplicationsWatchDemp.app */,
+				F6DCBF6C1D0E287000D79F4E /* KTComplicationsWatchDemp Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,6 +227,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F6DCBF611D0E287000D79F4E /* KTComplicationsWatchDemp */ = {
+			isa = PBXGroup;
+			children = (
+				F6DCBF621D0E287000D79F4E /* Interface.storyboard */,
+				F6DCBF651D0E287000D79F4E /* Assets.xcassets */,
+				F6DCBF671D0E287000D79F4E /* Info.plist */,
+			);
+			path = KTComplicationsWatchDemp;
+			sourceTree = "<group>";
+		};
+		F6DCBF701D0E287000D79F4E /* KTComplicationsWatchDemp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F6DCBF711D0E287000D79F4E /* InterfaceController.swift */,
+				F6DCBF731D0E287000D79F4E /* ExtensionDelegate.swift */,
+				F6DCBF751D0E287000D79F4E /* ComplicationController.swift */,
+				F6DCBF771D0E287000D79F4E /* Assets.xcassets */,
+				F6DCBF791D0E287000D79F4E /* Info.plist */,
+			);
+			path = "KTComplicationsWatchDemp Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,10 +262,12 @@
 				607FACCE1AFB9204008FA782 /* Resources */,
 				819E41D9408DA760794C40C4 /* [CP] Embed Pods Frameworks */,
 				73434D3AA1E201B03F7B7182 /* [CP] Copy Pods Resources */,
+				F6DCBF841D0E287000D79F4E /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F6DCBF7B1D0E287000D79F4E /* PBXTargetDependency */,
 			);
 			name = KTComplications_Example;
 			productName = KTComplications;
@@ -203,13 +295,47 @@
 			productReference = 607FACE51AFB9204008FA782 /* KTComplications_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F6DCBF5F1D0E287000D79F4E /* KTComplicationsWatchDemp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6DCBF811D0E287000D79F4E /* Build configuration list for PBXNativeTarget "KTComplicationsWatchDemp" */;
+			buildPhases = (
+				F6DCBF5E1D0E287000D79F4E /* Resources */,
+				F6DCBF801D0E287000D79F4E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6DCBF6F1D0E287000D79F4E /* PBXTargetDependency */,
+			);
+			name = KTComplicationsWatchDemp;
+			productName = KTComplicationsWatchDemp;
+			productReference = F6DCBF601D0E287000D79F4E /* KTComplicationsWatchDemp.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F6DCBF6B1D0E287000D79F4E /* KTComplicationsWatchDemp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6DCBF7D1D0E287000D79F4E /* Build configuration list for PBXNativeTarget "KTComplicationsWatchDemp Extension" */;
+			buildPhases = (
+				F6DCBF681D0E287000D79F4E /* Sources */,
+				F6DCBF691D0E287000D79F4E /* Frameworks */,
+				F6DCBF6A1D0E287000D79F4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KTComplicationsWatchDemp Extension";
+			productName = "KTComplicationsWatchDemp Extension";
+			productReference = F6DCBF6C1D0E287000D79F4E /* KTComplicationsWatchDemp Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
@@ -219,6 +345,12 @@
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
+					F6DCBF5F1D0E287000D79F4E = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					F6DCBF6B1D0E287000D79F4E = {
+						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
 			};
@@ -237,6 +369,8 @@
 			targets = (
 				607FACCF1AFB9204008FA782 /* KTComplications_Example */,
 				607FACE41AFB9204008FA782 /* KTComplications_Tests */,
+				F6DCBF5F1D0E287000D79F4E /* KTComplicationsWatchDemp */,
+				F6DCBF6B1D0E287000D79F4E /* KTComplicationsWatchDemp Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -256,6 +390,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6DCBF5E1D0E287000D79F4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6DCBF661D0E287000D79F4E /* Assets.xcassets in Resources */,
+				F6DCBF641D0E287000D79F4E /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6DCBF6A1D0E287000D79F4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6DCBF781D0E287000D79F4E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +523,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F6DCBF681D0E287000D79F4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6DCBF741D0E287000D79F4E /* ExtensionDelegate.swift in Sources */,
+				F6DCBF721D0E287000D79F4E /* InterfaceController.swift in Sources */,
+				F6DCBF761D0E287000D79F4E /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -379,6 +540,16 @@
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* KTComplications_Example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
+		};
+		F6DCBF6F1D0E287000D79F4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6DCBF6B1D0E287000D79F4E /* KTComplicationsWatchDemp Extension */;
+			targetProxy = F6DCBF6E1D0E287000D79F4E /* PBXContainerItemProxy */;
+		};
+		F6DCBF7B1D0E287000D79F4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6DCBF5F1D0E287000D79F4E /* KTComplicationsWatchDemp */;
+			targetProxy = F6DCBF7A1D0E287000D79F4E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -397,6 +568,14 @@
 				607FACDF1AFB9204008FA782 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		F6DCBF621D0E287000D79F4E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6DCBF631D0E287000D79F4E /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -439,7 +618,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -477,7 +656,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -490,6 +669,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KTComplications/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -503,6 +683,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KTComplications/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -544,6 +725,74 @@
 			};
 			name = Release;
 		};
+		F6DCBF7E1D0E287000D79F4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "KTComplicationsWatchDemp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.KTComplications-Example.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		F6DCBF7F1D0E287000D79F4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "KTComplicationsWatchDemp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.KTComplications-Example.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		F6DCBF821D0E287000D79F4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = KTComplicationsWatchDemp_Extension;
+				INFOPLIST_FILE = KTComplicationsWatchDemp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.KTComplications-Example.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		F6DCBF831D0E287000D79F4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = KTComplicationsWatchDemp_Extension;
+				INFOPLIST_FILE = KTComplicationsWatchDemp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.KTComplications-Example.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -573,6 +822,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		F6DCBF7D1D0E287000D79F4E /* Build configuration list for PBXNativeTarget "KTComplicationsWatchDemp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6DCBF7E1D0E287000D79F4E /* Debug */,
+				F6DCBF7F1D0E287000D79F4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F6DCBF811D0E287000D79F4E /* Build configuration list for PBXNativeTarget "KTComplicationsWatchDemp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6DCBF821D0E287000D79F4E /* Debug */,
+				F6DCBF831D0E287000D79F4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
